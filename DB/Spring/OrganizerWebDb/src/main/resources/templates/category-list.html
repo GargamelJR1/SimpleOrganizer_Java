@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OrganizerWebDb Category List</title>
+    <script type="text/javascript" th:src="@{../static/js/category-list.js}"></script>
+</head>
+<body onload="getCategories('categories')">
+
+<h1>Organizer Category List</h1>
+<br/>
+<div id="categories">
+
+</div>
+
+<div id="removeCategoryDiv" style="display: none">
+    <br>
+    Remove Category: <input type="text" id="removeCategory" name="removeCategory" placeholder="category">
+    <button onclick="removeCategory('removeCategory')">Remove</button>
+</div>
+
+<br>
+<br>
+<a href="/organizerwebdb">Back</a>
+
+<br>
+<br>
+All data on this page is read from the database. No data is hard-coded in the HTML or saved in cookies.
+
+</body>
+</html>

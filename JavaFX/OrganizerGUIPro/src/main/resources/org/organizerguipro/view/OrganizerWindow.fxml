@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.organizerguipro.controller.OrganizerWindowController">
+   <children>
+      <TableView fx:id="itemsTable" layoutX="14.0" layoutY="14.0" prefHeight="575.0" prefWidth="485.0">
+        <columns>
+            <TableColumn fx:id="idTabCol" prefWidth="48.0" text="id" />
+          <TableColumn fx:id="nameTabCol" prefWidth="105.0" text="name" />
+          <TableColumn fx:id="descriptionTabCol" prefWidth="330.0" text="description" />
+        </columns>
+         <tooltip>
+            <Tooltip text="items table" />
+         </tooltip>
+      </TableView>
+      <Label layoutX="510.0" layoutY="14.0" prefHeight="41.0" prefWidth="423.0" text="Organizer GUI PRO">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Organizer GUI PRO" />
+         </tooltip>
+      </Label>
+      <TextField fx:id="newName" layoutX="510.0" layoutY="106.0" prefHeight="28.0" prefWidth="362.0" promptText="name">
+         <tooltip>
+            <Tooltip text="item to add name" />
+         </tooltip></TextField>
+      <Button fx:id="addBtn" layoutX="885.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Add">
+         <tooltip>
+            <Tooltip text="add new item button" />
+         </tooltip></Button>
+      <Label layoutX="510.0" layoutY="80.0" text="Add new item">
+         <tooltip>
+            <Tooltip text="add new item header" />
+         </tooltip></Label>
+      <Label layoutX="510.0" layoutY="219.0" text="Remove item">
+         <tooltip>
+            <Tooltip text="remove item header" />
+         </tooltip></Label>
+      <TextField fx:id="itemToRemoveId" layoutX="510.0" layoutY="240.0" prefHeight="30.0" prefWidth="344.0" promptText="id">
+         <tooltip>
+            <Tooltip text="item to remove Id" />
+         </tooltip></TextField>
+      <Button fx:id="removeBtn" layoutX="863.0" layoutY="239.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Remove">
+         <tooltip>
+            <Tooltip text="remove item button" />
+         </tooltip></Button>
+      <TextArea fx:id="newDescription" layoutX="510.0" layoutY="140.0" prefHeight="62.0" prefWidth="425.0" promptText="description" wrapText="true">
+         <tooltip>
+            <Tooltip text="item to add description" />
+         </tooltip></TextArea>
+      <TextArea fx:id="oneItemDescription" editable="false" layoutX="510.0" layoutY="393.0" prefHeight="62.0" prefWidth="423.0" promptText="chosen item description">
+         <tooltip>
+            <Tooltip text="chosen item description" />
+         </tooltip>
+      </TextArea>
+      <TextField fx:id="oneItemName" editable="false" layoutX="510.0" layoutY="358.0" prefHeight="28.0" prefWidth="423.0" promptText="chosen item name">
+         <tooltip>
+            <Tooltip text="chosen item name" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="510.0" layoutY="300.0" text="Show one item">
+         <tooltip>
+            <Tooltip text="show one item header" />
+         </tooltip>
+      </Label>
+      <TextField fx:id="itemToShowId" layoutX="510.0" layoutY="321.0" prefHeight="30.0" prefWidth="344.0" promptText="id">
+         <tooltip>
+            <Tooltip text="item to show Id" />
+         </tooltip>
+      </TextField>
+      <Button fx:id="showItemBtn" layoutX="863.0" layoutY="320.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Show">
+         <tooltip>
+            <Tooltip text="show chosen item button" />
+         </tooltip>
+      </Button>
+      <Button fx:id="clearListBtn" layoutX="507.0" layoutY="563.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="423.0" text="Clear list">
+         <tooltip>
+            <Tooltip text="clear list button" />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>
